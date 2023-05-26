@@ -10,7 +10,7 @@ app.use(express.static('public'));
 
 app.use(require('./routes'));
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mong-mingle', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mongo-mingle', {
   useFindAndModify: false,
   useNewUrlParser: true,
   useCreateIndex: true,
